@@ -6,41 +6,63 @@
   <title>ISTJ的OC们</title>
   <style>
     body {
-      margin: 50px; /* 左上角距离边界 */
+      background-color: #d3d3d3; /* 灰色背景 */
       font-family: "Microsoft YaHei", sans-serif;
-      background-color: #fff; /* 白色背景 */
+      margin: 0;
+      padding: 20px;
+      border: 8px solid red; /* 四条边红色粗边框 */
+      box-sizing: border-box;
+      text-align: center;
     }
 
-    /* 左上角标题 */
+    /* 所有文字居中显示 */
     .title {
-      color: #000000; /* 黑色 */
+      color: #000000;
       font-size: 40px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
-    /* 恐怖红色文本 */
     .horror {
-      color: #ff0000; /* 红色 */
+      color: #ff0000;
       font-size: 32px;
-      letter-spacing: 5px; /* 字间距 */
-      font-family: "Creepster", "Microsoft YaHei", sans-serif; /* 血腥恐怖风格 */
+      letter-spacing: 5px;
+      font-family: "Creepster", "Microsoft YaHei", sans-serif;
       margin-bottom: 20px;
     }
 
-    /* 蓝色文本 */
     .blue-text {
-      color: #0000ff; /* 蓝色 */
+      color: #0000ff;
       font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    /* 图片并排显示 */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* 图片间距 */
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .image-row img {
+      max-width: 45%; /* 图片最大宽度不超过屏幕一半 */
+      height: auto;   /* 保持原比例 */
     }
   </style>
 
-  <!-- 可选：引入 Google Fonts 的血腥字体 -->
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="title">ISTJ的oc们</div>
-  <div class="horror">我爱恐怖游戏实况，伪纪录片太好看了</div>
-  <div class="blue-text">全面，包容，反讽</div>
+  <div class="title">ISTJ的OC们其一</div>
+  <div class="horror">灵感来源于圣斗士星矢，恐怖片，海贼王</div>
+  <div class="blue-text">天寿星赫尔玛</div>
+
+  <div class="image-row">
+    <img src="Vampire-Marine.png" alt="Vampire Marine">
+    <img src="Red-Ballet.png" alt="Red Ballet">
+  </div>
 </body>
 </html>
+
